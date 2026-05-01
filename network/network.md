@@ -23,4 +23,10 @@ Layers 1 and 2 in the OSI model correspond to Layer 1 in TCP/IP, and Layers 5, 6
 - L3 - Transport. L4 for OSI model.
 - L4 - Application. It combines L5, L6 and L7 in OSI model
 
+## Firewall
 
+## SSH
+
+## Load Balancer
+
+## VPN
