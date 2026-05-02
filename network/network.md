@@ -32,7 +32,7 @@ Types of firewalls:
 - Stateful (SPI) — tracks the state of connections. Understands that this packet is a response to an already established connection. Smarter and more secure.
 - WAF (Web Application Firewall) — specifically for web applications. Protects against SQL injections, XSS attacks, and DDoS. For example, CloudFlare and AWS WAF.
 ## VPN
- 
+A VPN is an overlay network that creates a virtual network interface (tun/tap) on your device and encapsulates all or part of the traffic into an encrypted tunnel. 
 ### SSH
 SSH (Secure Shell) is a protocol for securely connecting to a remote server over a network.
 ### Load Balancer
