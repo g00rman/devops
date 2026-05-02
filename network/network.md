@@ -7,7 +7,7 @@ Your PC ---> router ---> provider ---> backbone network operator ---> data cente
 The OSi model is an abstract network model of open system interaction; in simple terms, 
 it is an ideal model that helps specialists determine at which stage a network error occurred.
 It have a 7 layer:
-- L1 - physical. This is a hardware level. Her, data is transmitted form of electrical signals, light pulses, or radio waves.
+- L1 - Physical layer. This is a hardware layer. Her, data is transmitted form of electrical signals, light pulses, or radio waves.
 - L2 - Link layer. Enables data transmission between two devices on the same local area network. Mak addresses are used here.
 - L3 - Network layer. Is responsible for routing data between different networks. The IP address is already here.
 - L4 - Transport layer. This layer is responsible for ensuring data transmission between two applications. It does this through that the programs use.
@@ -24,9 +24,17 @@ Layers 1 and 2 in the OSI model correspond to Layer 1 in TCP/IP, and Layers 5, 6
 - L4 - Application. It combines L5, L6 and L7 in OSI model
 
 ## Firewall
-
-## SSH
-
-## Load Balancer
-
+A firewall is a network traffic filter that determinate which packets to allow through and which to block. Protection against unauthorized access - close all ports
+except a necessary ones. For example, onep only ports 22(SSH), 80(HTTP) and 443(HTTPS), and block all others.
+Types of firewalls:
+- Network firewall - sits at the edge of the entire network. It filters traffic for all devices at once. For example, AWS Security Groups are network firewalls.
+- Stateless — checks each packet individually against rules. Simple but dumb — does not understand the context of the connection.
+- Stateful (SPI) — tracks the state of connections. Understands that this packet is a response to an already established connection. Smarter and more secure.
+- WAF (Web Application Firewall) — specifically for web applications. Protects against SQL injections, XSS attacks, and DDoS. For example, CloudFlare and AWS WAF.
 ## VPN
+ 
+### SSH
+SSH (Secure Shell) is a protocol for securely connecting to a remote server over a network.
+### Load Balancer
+A load balancer distributes incoming traffic among multiple servers.
+
